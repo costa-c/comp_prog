@@ -4,8 +4,6 @@
  * the dice and an instance method for rolling the dice
  */
 public class PairOfDice {
-    public int die1; // Number showing on the first die.
-    public int die2; // Number showing on the second die.
 
     public PairOfDice() {
         // Constructor. Rolls the dice, so that they initially
@@ -20,11 +18,22 @@ public class PairOfDice {
         die2 = val2; // to the instance variables.
     }
 
+    public int getDie1() {
+        return die1;
+    }
+
+    public int getDie2() {
+        return die2;
+    }
+
     public void roll() {
         // Roll the dice by setting each of the dice to be
         // a random number between 1 and 6.
         die1 = (int) (Math.random() * 6) + 1;
         die2 = (int) (Math.random() * 6) + 1;
     }
+
+    private int die1; // Number showing on the first die.
+    private int die2; // Number showing on the second die.
 
 } // end class PairOfDice

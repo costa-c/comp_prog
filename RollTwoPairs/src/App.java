@@ -21,11 +21,11 @@ public class App {
         do { // Roll the two pairs of dice until totals are the same.
 
             firstDice.roll(); // Roll the first pair of dice.
-            total1 = firstDice.die1 + firstDice.die2; // Get total.
+            total1 = firstDice.getDie1() + firstDice.getDie2(); // Get total.
             System.out.println("First pair comes up  " + total1);
 
             secondDice.roll(); // Roll the second pair of dice.
-            total2 = secondDice.die1 + secondDice.die2; // Get total.
+            total2 = secondDice.getDie1() + secondDice.getDie2(); // Get total.
             System.out.println("Second pair comes up " + total2);
 
             countRolls++; // Count this roll.
